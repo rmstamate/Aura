@@ -7,7 +7,8 @@
 #include "AbilitySystemInterface.h"
 #include "AuraCharacterBase.generated.h"
 
-class UAuraAbilitySystemComponent;
+class UAuraAttributeSet;
+class UAbilitySystemComponent;
 class UAttributeSet;
 
 UCLASS()
@@ -28,7 +29,7 @@ protected:
 	TObjectPtr<USkeletalMeshComponent> Weapon;
 
 	UPROPERTY(EditAnywhere, Category="Ability System")
-	TObjectPtr<UAuraAbilitySystemComponent> AbilitySystemComponent;
+	TObjectPtr<UAbilitySystemComponent> AbilitySystemComponent;
 
 	UPROPERTY(EditAnywhere, Category="Ability System")
 	TObjectPtr<UAttributeSet> AttributeSet;
