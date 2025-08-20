@@ -5,6 +5,10 @@
 
 void UAuraUserWidget::SetWidgetController(UObject* InWidgetController)
 {
-	WidgetController = InWidgetController;
-	WidgetControllerSet();
+	checkf(InWidgetController, TEXT("The reference is broken?"));
+	if (InWidgetController)
+	{
+		WidgetController = InWidgetController;
+		// WidgetControllerSet();
+	}
 }

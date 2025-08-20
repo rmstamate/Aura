@@ -16,10 +16,10 @@ public:
 	void SetWidgetController(UObject* InWidgetController);
 	
 	UPROPERTY(BlueprintReadOnly, Category="Controller")
-	TObjectPtr<UObject> WidgetController;
+	TObjectPtr<UObject> WidgetController = nullptr;
 
-protected:
-	UFUNCTION(BlueprintImplementableEvent, Category="Controller")
-	void WidgetControllerSet();
+// protected:
+	// UFUNCTION(BlueprintImplementableEvent, Category="Controller")
+	// void WidgetControllerSet();
 	
 };
