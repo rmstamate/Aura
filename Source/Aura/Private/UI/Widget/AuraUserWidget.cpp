@@ -9,6 +9,6 @@ void UAuraUserWidget::SetWidgetController(UObject* InWidgetController)
 	if (InWidgetController)
 	{
 		WidgetController = InWidgetController;
-		// WidgetControllerSet();
+		WidgetControllerSet();
 	}
 }
