@@ -53,6 +53,9 @@ protected:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category="Effects")
 	bool bDestroyOnEffectRemoval = false;
 
+	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category="Effects")
+	float ActorLevel = 1.f;
+	
 	// Effect apply policy
 	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category="Effects")
 	EEffectApplicationPolicy InstantEAPolicy = EEffectApplicationPolicy::DoNotApply;
@@ -76,4 +79,5 @@ protected:
 
 	UFUNCTION(BlueprintCallable, Category="Effects")
 	void OnEndOverlap(AActor* TargetActor);
+	
 };
