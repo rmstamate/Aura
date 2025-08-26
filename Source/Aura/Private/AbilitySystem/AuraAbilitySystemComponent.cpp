@@ -12,4 +12,9 @@ void UAuraAbilitySystemComponent::EffectApplied(UAbilitySystemComponent* ASC, co
 	FActiveGameplayEffectHandle ActiveEffectHandle)
 {
 	// GEngine->AddOnScreenDebugMessage(1, 8.f, FColor::Blue, FString("Effect Applied"));
+	// EffectSpec.GetAllGrantedTags();
+	// EffectSpec.GetAllBlockedAbilityTags();
+	FGameplayTagContainer TagsContainer;
+	EffectSpec.GetAllAssetTags(TagsContainer);
+	EffectAssetTags.Broadcast(TagsContainer);
 }
