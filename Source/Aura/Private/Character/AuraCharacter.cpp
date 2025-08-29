@@ -65,4 +65,5 @@ void AAuraCharacter::InitAbilityActorInfo()
 
 	ApplyEffectToSelf(DefaultPrimaryAttributes, 1.f);
 	ApplyEffectToSelf(DefaultSecondaryAttributes, 1.f);
+	ApplyEffectToSelf(VitalAttributes, 1.f);
 }
